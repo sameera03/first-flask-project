@@ -21,10 +21,14 @@
       <h2 class="text-center mt-2 mb-4">About Coding</h2>
       <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Adipiscing bibendum est ultricies integer quis auctor elit sed vulputate. Enim sit amet venenatis urna cursus. In est ante in nibh mauris cursus mattis molestie a. Mollis aliquam ut porttitor leo a diam sollicitudin. Cursus in hac habitasse platea dictumst. Et malesuada fames ac turpis egestas integer eget aliquet. Vitae nunc sed velit dignissim sodales ut eu. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc. Augue lacus viverra vitae congue eu consequat ac.</p>
       <h2 class="text-center">Open Positions</h2>
-      <p class="text-center">TODO - Show the jobs here</p>
+      <div>
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
       <div style="text-align:center;">
-        <button style= "text-align:center">Contact Us</button>
-        <p class ="mt-4">Copyright 2024, Sameera</p>
+        <button class ="mt-4" style= "text-align:center">Contact Us</button>
+        <p class ="mt-2">Copyright 2024, Sameera</p>
       </div>
     </div>
   </body>
